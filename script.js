@@ -15,39 +15,7 @@ window.addEventListener('load', () => {
     }, 1200);
 });
 
-// ======================== TYPING ANIMATION ========================
-const typedElement = document.getElementById('typed-text');
-const words = ['Developer', 'Problem Solver', 'AI Enthusiast', 'Full-Stack Developer', 'DSA Specialist'];
-let wordIndex = 0;
-let charIndex = 0;
-let isDeleting = false;
-
-function typeEffect() {
-    const currentWord = words[wordIndex];
-
-    if (isDeleting) {
-        typedElement.textContent = currentWord.substring(0, charIndex - 1);
-        charIndex--;
-    } else {
-        typedElement.textContent = currentWord.substring(0, charIndex + 1);
-        charIndex++;
-    }
-
-    let delay = isDeleting ? 50 : 100;
-
-    if (!isDeleting && charIndex === currentWord.length) {
-        delay = 2000;
-        isDeleting = true;
-    } else if (isDeleting && charIndex === 0) {
-        isDeleting = false;
-        wordIndex = (wordIndex + 1) % words.length;
-        delay = 400;
-    }
-
-    setTimeout(typeEffect, delay);
-}
-
-setTimeout(typeEffect, 1800);
+// Typing animation removed for new hero design
 
 // ======================== PARTICLE BACKGROUND ========================
 const canvas = document.getElementById('particles-canvas');
