@@ -103,53 +103,57 @@
 
     <!-- ======================== ABOUT SECTION ======================== -->
     <section id="about" class="about-section">
+        <div class="about-glow about-glow-1"></div>
+        <div class="about-glow about-glow-2"></div>
         <div class="container">
             <h2 class="section-title reveal">
                 About Me
             </h2>
-            <div class="about-grid no-image">
-                <div class="about-text reveal">
-                    <p>
-                        Hi there! I'm <strong>Hemant Digarse</strong>, a passionate developer and tech enthusiast
+            <div class="about-modern reveal">
+                <div class="about-intro">
+                    <div class="about-greeting">
+                        <span class="greeting-code">&lt;</span>Hello, World!<span class="greeting-code">/&gt;</span>
+                    </div>
+                    <p class="about-lead">
+                        I'm <strong>Hemant Digarse</strong>, a passionate developer and tech enthusiast
                         currently pursuing <strong>B.Tech in Computer Science</strong> at
                         <strong>Lovely Professional University</strong>, Punjab (CGPA: 7.83).
                     </p>
                     <p>
-                        My journey in tech started with a curiosity for how things work, which quickly evolved
-                        into a passion for software development, data structures & algorithms, machine learning,
-                        and full-stack web development. I love solving problems and building meaningful applications.
+                        My journey in tech started with curiosity for how things work — which evolved into
+                        a passion for software development, data structures & algorithms, machine learning,
+                        and full-stack web development. I love solving problems and building impactful applications.
                     </p>
-                    <div class="about-details">
-                        <div class="detail-card" data-tilt>
-                            <i class="fas fa-graduation-cap"></i>
-                            <div>
-                                <h4>Education</h4>
-                                <p>B.Tech CSE — LPU (2023–Present)</p>
-                            </div>
-                        </div>
-                        <div class="detail-card" data-tilt>
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Location</h4>
-                                <p>Madhya Pradesh, India</p>
-                            </div>
-                        </div>
-                        <div class="detail-card" data-tilt>
-                            <i class="fas fa-heart"></i>
-                            <div>
-                                <h4>Interests</h4>
-                                <p>AI/ML, Web Dev, DSA, Cloud</p>
-                            </div>
-                        </div>
-                        <div class="detail-card" data-tilt>
-                            <i class="fas fa-code"></i>
-                            <div>
-                                <h4>Focus</h4>
-                                <p>Full-Stack & Problem Solving</p>
-                            </div>
-                        </div>
+                    <div class="about-tech-tags">
+                        <span><i class="fab fa-java"></i> Java</span>
+                        <span><i class="fab fa-react"></i> React</span>
+                        <span><i class="fab fa-python"></i> Python</span>
+                        <span><i class="fas fa-leaf"></i> Spring Boot</span>
+                        <span><i class="fas fa-brain"></i> ML / AI</span>
+                        <span><i class="fas fa-database"></i> SQL</span>
                     </div>
-
+                </div>
+                <div class="about-info-cards">
+                    <div class="about-info-card" data-tilt>
+                        <div class="about-info-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <h4>Education</h4>
+                        <p>B.Tech CSE — LPU<br><span class="about-info-sub">2023 – Present</span></p>
+                    </div>
+                    <div class="about-info-card" data-tilt>
+                        <div class="about-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <h4>Location</h4>
+                        <p>Madhya Pradesh<br><span class="about-info-sub">India</span></p>
+                    </div>
+                    <div class="about-info-card" data-tilt>
+                        <div class="about-info-icon"><i class="fas fa-heart"></i></div>
+                        <h4>Interests</h4>
+                        <p>AI/ML, Web Dev<br><span class="about-info-sub">DSA, Cloud</span></p>
+                    </div>
+                    <div class="about-info-card" data-tilt>
+                        <div class="about-info-icon"><i class="fas fa-code"></i></div>
+                        <h4>Focus</h4>
+                        <p>Full-Stack Dev<br><span class="about-info-sub">Problem Solving</span></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -328,70 +332,99 @@
                 Certificates & Achievements
             </h2>
             <p class="section-subtitle reveal">Courses, certifications, and milestones</p>
-            <div class="cert-compact-grid">
-                <!-- Training -->
-                <div class="cert-compact-card reveal">
-                    <div class="cert-compact-icon training"><i class="fas fa-laptop-code"></i></div>
-                    <div class="cert-compact-body">
-                        <h4>Summer Training — DSA in C++</h4>
-                        <p>Hands-on DSA problem solving with arrays, trees, graphs & DP.</p>
-                        <div class="cert-compact-meta">
-                            <span><i class="fas fa-calendar-alt"></i> Jun 2025</span>
-                            <span class="cert-compact-tag">C++</span>
-                        </div>
-                    </div>
+        </div>
+        <!-- Scrolling certificates marquee -->
+        <div class="cert-marquee-wrapper reveal">
+            <div class="cert-marquee-track">
+                <!-- Card 1: DSA Training -->
+                <div class="cert-scroll-card">
+                    <div class="cert-scroll-icon training"><i class="fas fa-laptop-code"></i></div>
+                    <h4>Summer Training — DSA in C++</h4>
+                    <p>Hands-on DSA problem solving</p>
+                    <span class="cert-scroll-date"><i class="fas fa-calendar-alt"></i> Jun 2025</span>
                 </div>
-                <!-- NPTEL -->
-                <a href="nptel-cloud-computing.pdf" target="_blank" class="cert-compact-card cert-compact-link reveal">
-                    <div class="cert-compact-icon"><i class="fas fa-cloud"></i></div>
-                    <div class="cert-compact-body">
-                        <h4>NPTEL — Cloud Computing <span class="cert-compact-badge">Elite</span></h4>
-                        <p>IIT Kharagpur · Score: 67%</p>
-                        <div class="cert-compact-meta">
-                            <span><i class="fas fa-calendar-alt"></i> Jan–Apr 2025</span>
-                            <span class="cert-compact-tag">IIT Kharagpur</span>
-                        </div>
+                <!-- Card 2: NPTEL -->
+                <a href="nptel-cloud-computing.pdf" target="_blank" class="cert-scroll-card has-img">
+                    <img src="nptel-cert.jpg" alt="NPTEL Certificate" class="cert-scroll-img">
+                    <div class="cert-scroll-overlay">
+                        <span class="cert-scroll-badge">Elite</span>
+                        <h4>NPTEL — Cloud Computing</h4>
+                        <p>IIT Kharagpur · 67%</p>
+                        <span class="cert-scroll-date"><i class="fas fa-calendar-alt"></i> Jan–Apr 2025</span>
                     </div>
-                    <i class="fas fa-external-link-alt cert-compact-link-icon"></i>
                 </a>
-                <!-- Iamneo -->
-                <a href="iarneo-java.pdf" target="_blank" class="cert-compact-card cert-compact-link reveal">
-                    <div class="cert-compact-icon"><i class="fab fa-java"></i></div>
-                    <div class="cert-compact-body">
-                        <h4>Iamneo — Java Programming <span class="cert-compact-badge" style="background:rgba(255,107,107,0.15);color:#ff6b6b;">Certified</span></h4>
-                        <p>Java Programming certification from Iamneo platform.</p>
-                        <div class="cert-compact-meta">
-                            <span><i class="fas fa-calendar-alt"></i> Mar 2025</span>
-                            <span class="cert-compact-tag">Iamneo</span>
-                        </div>
+                <!-- Card 3: Iamneo -->
+                <a href="iarneo-java.pdf" target="_blank" class="cert-scroll-card has-img">
+                    <img src="iarneo-cert.jpg" alt="Iamneo Certificate" class="cert-scroll-img">
+                    <div class="cert-scroll-overlay">
+                        <span class="cert-scroll-badge" style="background:rgba(255,107,107,0.8);">Certified</span>
+                        <h4>Iamneo — Java Programming</h4>
+                        <p>Java certification</p>
+                        <span class="cert-scroll-date"><i class="fas fa-calendar-alt"></i> Mar 2025</span>
                     </div>
-                    <i class="fas fa-external-link-alt cert-compact-link-icon"></i>
                 </a>
-                <!-- freeCodeCamp -->
-                <a href="https://www.freecodecamp.org/certification/hema123/responsive-web-design" target="_blank" class="cert-compact-card cert-compact-link reveal">
-                    <div class="cert-compact-icon"><i class="fab fa-free-code-camp"></i></div>
-                    <div class="cert-compact-body">
-                        <h4>freeCodeCamp — Responsive Web Design <span class="cert-compact-badge" style="background:rgba(10,10,35,0.25);color:#a0a0ff;">Certified</span></h4>
-                        <p>Responsive web design certification.</p>
-                        <div class="cert-compact-meta">
-                            <span><i class="fas fa-calendar-alt"></i> Jan 2024</span>
-                            <span class="cert-compact-tag">freeCodeCamp</span>
-                        </div>
+                <!-- Card 4: freeCodeCamp -->
+                <a href="https://www.freecodecamp.org/certification/hema123/responsive-web-design" target="_blank" class="cert-scroll-card has-img">
+                    <img src="freecodecamp-cert.jpg" alt="freeCodeCamp Certificate" class="cert-scroll-img">
+                    <div class="cert-scroll-overlay">
+                        <span class="cert-scroll-badge" style="background:rgba(10,10,35,0.8);">Certified</span>
+                        <h4>freeCodeCamp — Web Design</h4>
+                        <p>Responsive Web Design</p>
+                        <span class="cert-scroll-date"><i class="fas fa-calendar-alt"></i> Jan 2024</span>
                     </div>
-                    <i class="fas fa-external-link-alt cert-compact-link-icon"></i>
                 </a>
-                <!-- IIT Madras Achievement -->
-                <a href="younid-admission.pdf" target="_blank" class="cert-compact-card cert-compact-link achievement reveal">
-                    <div class="cert-compact-icon achievement"><i class="fas fa-award"></i></div>
-                    <div class="cert-compact-body">
-                        <h4>BS Data Science — IIT Madras <span class="cert-compact-badge" style="background:rgba(0,201,255,0.15);color:#00c9ff;">YouNiD</span></h4>
-                        <p>Qualified for BS in Data Science & Application.</p>
-                        <div class="cert-compact-meta">
-                            <span><i class="fas fa-calendar-alt"></i> Apr 2024</span>
-                            <span class="cert-compact-tag">IIT Madras</span>
-                        </div>
+                <!-- Card 5: IIT Madras -->
+                <a href="younid-admission.pdf" target="_blank" class="cert-scroll-card has-img">
+                    <img src="younid-cert.jpg" alt="IIT Madras Certificate" class="cert-scroll-img">
+                    <div class="cert-scroll-overlay">
+                        <span class="cert-scroll-badge" style="background:rgba(0,201,255,0.8);">YouNiD</span>
+                        <h4>BS Data Science — IIT Madras</h4>
+                        <p>Qualified for BS programme</p>
+                        <span class="cert-scroll-date"><i class="fas fa-calendar-alt"></i> Apr 2024</span>
                     </div>
-                    <i class="fas fa-external-link-alt cert-compact-link-icon"></i>
+                </a>
+                <!-- Duplicates for seamless loop -->
+                <div class="cert-scroll-card">
+                    <div class="cert-scroll-icon training"><i class="fas fa-laptop-code"></i></div>
+                    <h4>Summer Training — DSA in C++</h4>
+                    <p>Hands-on DSA problem solving</p>
+                    <span class="cert-scroll-date"><i class="fas fa-calendar-alt"></i> Jun 2025</span>
+                </div>
+                <a href="nptel-cloud-computing.pdf" target="_blank" class="cert-scroll-card has-img">
+                    <img src="nptel-cert.jpg" alt="NPTEL Certificate" class="cert-scroll-img">
+                    <div class="cert-scroll-overlay">
+                        <span class="cert-scroll-badge">Elite</span>
+                        <h4>NPTEL — Cloud Computing</h4>
+                        <p>IIT Kharagpur · 67%</p>
+                        <span class="cert-scroll-date"><i class="fas fa-calendar-alt"></i> Jan–Apr 2025</span>
+                    </div>
+                </a>
+                <a href="iarneo-java.pdf" target="_blank" class="cert-scroll-card has-img">
+                    <img src="iarneo-cert.jpg" alt="Iamneo Certificate" class="cert-scroll-img">
+                    <div class="cert-scroll-overlay">
+                        <span class="cert-scroll-badge" style="background:rgba(255,107,107,0.8);">Certified</span>
+                        <h4>Iamneo — Java Programming</h4>
+                        <p>Java certification</p>
+                        <span class="cert-scroll-date"><i class="fas fa-calendar-alt"></i> Mar 2025</span>
+                    </div>
+                </a>
+                <a href="https://www.freecodecamp.org/certification/hema123/responsive-web-design" target="_blank" class="cert-scroll-card has-img">
+                    <img src="freecodecamp-cert.jpg" alt="freeCodeCamp Certificate" class="cert-scroll-img">
+                    <div class="cert-scroll-overlay">
+                        <span class="cert-scroll-badge" style="background:rgba(10,10,35,0.8);">Certified</span>
+                        <h4>freeCodeCamp — Web Design</h4>
+                        <p>Responsive Web Design</p>
+                        <span class="cert-scroll-date"><i class="fas fa-calendar-alt"></i> Jan 2024</span>
+                    </div>
+                </a>
+                <a href="younid-admission.pdf" target="_blank" class="cert-scroll-card has-img">
+                    <img src="younid-cert.jpg" alt="IIT Madras Certificate" class="cert-scroll-img">
+                    <div class="cert-scroll-overlay">
+                        <span class="cert-scroll-badge" style="background:rgba(0,201,255,0.8);">YouNiD</span>
+                        <h4>BS Data Science — IIT Madras</h4>
+                        <p>Qualified for BS programme</p>
+                        <span class="cert-scroll-date"><i class="fas fa-calendar-alt"></i> Apr 2024</span>
+                    </div>
                 </a>
             </div>
         </div>
