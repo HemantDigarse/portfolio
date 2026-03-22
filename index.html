@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Hemant Digarse — Developer, Problem Solver, AI Enthusiast. B.Tech CSE student at Lovely Professional University. Explore my portfolio.">
+    <title>Hemant Digarse | Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ======================== LOADING SCREEN ======================== -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <p class="loader-text">Loading<span class="dots"></span></p>
+        </div>
+    </div>
+
+    <!-- ======================== CURSOR GLOW ======================== -->
+    <div id="cursor-glow" class="cursor-glow"></div>
+
+    <!-- ======================== PARTICLE CANVAS ======================== -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- ======================== NAVBAR ======================== -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="#home" class="nav-logo">Hemant Digarse</a>
+                <span class="nav-subtitle">Full-Stack Developer</span>
+            </div>
+
+            <!-- Nav Links -->
+            <ul id="nav-menu" class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certificates" class="nav-link">Certificates</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <!-- Theme Toggle -->
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button>
+
+                <!-- Hamburger Menu -->
+                <button id="hamburger" class="hamburger" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ======================== HERO SECTION ======================== -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <p class="hero-greeting reveal">Hello, I'm</p>
+            <h1 class="hero-name reveal">Hemant Digarse</h1>
+            <div class="hero-typing-wrapper reveal">
+                <span class="hero-prefix">I'm a </span>
+                <span id="typed-text" class="typed-text"></span>
+                <span class="cursor">|</span>
+            </div>
+            <p class="hero-description reveal">
+                B.Tech CSE student at Lovely Professional University. Passionate about building elegant solutions,
+                solving complex problems, and exploring the frontiers of AI & technology.
+            </p>
+            <div class="hero-buttons reveal">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i> View Projects
+                </a>
+                <a href="resume.pdf" class="btn btn-primary" download>
+                    <i class="fas fa-file-alt"></i> Download Resume
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <i class="fas fa-envelope"></i> Contact Me
+                </a>
+            </div>
+            <div class="hero-socials reveal">
+                <a href="https://github.com/HemantDigarse/" target="_blank" aria-label="GitHub"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/hemant" target="_blank" aria-label="LinkedIn"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:hemantdigarse883@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <a href="#about">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <span>Scroll Down</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- ======================== ABOUT SECTION ======================== -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title reveal">
+                About Me
+            </h2>
+            <div class="about-grid">
+                <div class="about-image reveal">
+                    <div class="image-wrapper" data-tilt>
+                        <img src="profile.jpeg" alt="Hemant Digarse" class="profile-img">
+                        <div class="image-border"></div>
+                        <div class="image-glow"></div>
+                    </div>
+                </div>
+                <div class="about-text reveal">
+                    <p>
+                        Hi there! I'm <strong>Hemant Digarse</strong>, a passionate developer and tech enthusiast
+                        currently pursuing <strong>B.Tech in Computer Science</strong> at
+                        <strong>Lovely Professional University</strong>, Punjab (CGPA: 7.83).
+                    </p>
+                    <p>
+                        My journey in tech started with a curiosity for how things work, which quickly evolved
+                        into a passion for software development, data structures & algorithms, machine learning,
+                        and full-stack web development. I love solving problems and building meaningful applications.
+                    </p>
+                    <div class="about-details">
+                        <div class="detail-card" data-tilt>
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h4>Education</h4>
+                                <p>B.Tech CSE — LPU (2023–Present)</p>
+                            </div>
+                        </div>
+                        <div class="detail-card" data-tilt>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Madhya Pradesh, India</p>
+                            </div>
+                        </div>
+                        <div class="detail-card" data-tilt>
+                            <i class="fas fa-heart"></i>
+                            <div>
+                                <h4>Interests</h4>
+                                <p>AI/ML, Web Dev, DSA, Cloud</p>
+                            </div>
+                        </div>
+                        <div class="detail-card" data-tilt>
+                            <i class="fas fa-code"></i>
+                            <div>
+                                <h4>Focus</h4>
+                                <p>Full-Stack & Problem Solving</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Let's Connect
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== STATS COUNTER ======================== -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card reveal">
+                    <div class="stat-number" data-target="2">0</div>
+                    <div class="stat-label">Projects Built</div>
+                </div>
+                <div class="stat-card reveal">
+                    <div class="stat-number" data-target="6">0</div>
+                    <div class="stat-label">Technologies</div>
+                </div>
+                <div class="stat-card reveal">
+                    <div class="stat-number" data-target="4">0</div>
+                    <div class="stat-label">Certifications</div>
+                </div>
+                <div class="stat-card reveal">
+                    <div class="stat-number" data-target="100" data-suffix="+">0</div>
+                    <div class="stat-label">DSA Problems Solved</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== SKILLS SECTION ======================== -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title reveal">
+                Skills & Technologies
+            </h2>
+            <p class="section-subtitle reveal">Technologies I've been working with</p>
+
+            <!-- Programming Languages -->
+            <h3 class="skills-category-title reveal">Languages</h3>
+            <div class="skills-grid">
+                <div class="skill-card reveal" data-tilt>
+                    <div class="skill-icon"><i class="fab fa-python"></i></div>
+                    <h3>Python</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="88%"></div>
+                    </div>
+                    <span class="skill-level">Advanced</span>
+                </div>
+                <div class="skill-card reveal" data-tilt>
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h3>C++</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="90%"></div>
+                    </div>
+                    <span class="skill-level">Advanced</span>
+                </div>
+                <div class="skill-card reveal" data-tilt>
+                    <div class="skill-icon"><i class="fab fa-java"></i></div>
+                    <h3>Java</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="85%"></div>
+                    </div>
+                    <span class="skill-level">Advanced</span>
+                </div>
+                <div class="skill-card reveal" data-tilt>
+                    <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="82%"></div>
+                    </div>
+                    <span class="skill-level">Intermediate</span>
+                </div>
+                <div class="skill-card reveal" data-tilt>
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <h3>SQL</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="80%"></div>
+                    </div>
+                    <span class="skill-level">Intermediate</span>
+                </div>
+                <div class="skill-card reveal" data-tilt>
+                    <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                    <h3>HTML / CSS</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="92%"></div>
+                    </div>
+                    <span class="skill-level">Advanced</span>
+                </div>
+            </div>
+
+            <!-- Frameworks & Tools -->
+            <h3 class="skills-category-title reveal">Frameworks, Libraries & Tools</h3>
+            <div class="skills-grid">
+                <div class="skill-card reveal" data-tilt>
+                    <div class="skill-icon"><i class="fab fa-react"></i></div>
+                    <h3>React</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="75%"></div>
+                    </div>
+                    <span class="skill-level">Intermediate</span>
+                </div>
+                <div class="skill-card reveal" data-tilt>
+                    <div class="skill-icon"><i class="fas fa-leaf"></i></div>
+                    <h3>Spring Boot</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="78%"></div>
+                    </div>
+                    <span class="skill-level">Intermediate</span>
+                </div>
+                <div class="skill-card reveal" data-tilt>
+                    <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                    <h3>Scikit-Learn</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="80%"></div>
+                    </div>
+                    <span class="skill-level">Intermediate</span>
+                </div>
+                <div class="skill-card reveal" data-tilt>
+                    <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
+                    <h3>Pandas / NumPy</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="82%"></div>
+                    </div>
+                    <span class="skill-level">Intermediate</span>
+                </div>
+                <div class="skill-card reveal" data-tilt>
+                    <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                    <h3>Git / GitHub</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="85%"></div>
+                    </div>
+                    <span class="skill-level">Advanced</span>
+                </div>
+                <div class="skill-card reveal" data-tilt>
+                    <div class="skill-icon"><i class="fas fa-project-diagram"></i></div>
+                    <h3>DSA / OOP</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="90%"></div>
+                    </div>
+                    <span class="skill-level">Advanced</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== PROJECTS SECTION ======================== -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title reveal">
+                Projects
+            </h2>
+            <p class="section-subtitle reveal">Some things I've built</p>
+            <div class="projects-grid">
+                <!-- Project 1: Medical Diagnosis -->
+                <div class="project-card reveal" data-tilt>
+                    <div class="project-header">
+                        <i class="fas fa-folder-open project-folder-icon"></i>
+                        <div class="project-links">
+                            <a href="https://github.com/HemantDigarse/" target="_blank" aria-label="GitHub"><i
+                                    class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-date">Nov 2025</div>
+                    <h3 class="project-title">Medical Diagnosis & Severity Prediction</h3>
+                    <p class="project-description">
+                        An ML system for disease diagnosis & severity score prediction using Regression,
+                        Logistic Regression, KNN, GaussianNB & MultinomialNB. Performed data cleaning,
+                        feature engineering, scaling & polynomial transformations. Achieved strong accuracy
+                        using F1-score, Confusion Matrix, RMSE, MAE, R² score.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>Scikit-Learn</span>
+                        <span>Jupyter</span>
+                    </div>
+                </div>
+
+                <!-- Project 2: Garage Bill System -->
+                <div class="project-card reveal" data-tilt>
+                    <div class="project-header">
+                        <i class="fas fa-folder-open project-folder-icon"></i>
+                        <div class="project-links">
+                            <a href="https://github.com/HemantDigarse/" target="_blank" aria-label="GitHub"><i
+                                    class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-date">Sep 2025</div>
+                    <h3 class="project-title">Garage Bill System</h3>
+                    <p class="project-description">
+                        A garage management system to handle billing, vehicle service tracking, and customer
+                        records. Implemented RESTful APIs using Spring Boot, integrated MySQL via JDBC/JPA,
+                        automated invoice generation. Designed modular backend architecture with input
+                        validation & exception handling.
+                    </p>
+                    <div class="project-tech">
+                        <span>Java</span>
+                        <span>Spring Boot</span>
+                        <span>MySQL</span>
+                        <span>REST API</span>
+                        <span>React</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== CERTIFICATES & TRAINING SECTION ======================== -->
+    <section id="certificates" class="certificates-section">
+        <div class="container">
+            <h2 class="section-title reveal">
+                Certificates & Training
+            </h2>
+            <p class="section-subtitle reveal">Courses, certifications, and achievements</p>
+
+            <!-- Training -->
+            <h3 class="cert-category-title reveal"><i class="fas fa-chalkboard-teacher"></i> Training</h3>
+            <div class="cert-grid">
+                <div class="cert-card reveal" data-tilt>
+                    <div class="cert-icon training"><i class="fas fa-laptop-code"></i></div>
+                    <div class="cert-info">
+                        <h4>Summer Training — DSA in C++</h4>
+                        <p>Gained hands-on experience solving computational problems. Implemented arrays, linked lists,
+                            stacks, queues, trees, graphs, heaps, and hash tables. Designed optimized algorithms for
+                            sorting, searching, graph traversal & dynamic programming.</p>
+                        <div class="cert-meta">
+                            <span class="cert-date"><i class="fas fa-calendar-alt"></i> Jun 2025</span>
+                            <span class="cert-tech">C++</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <h3 class="cert-category-title reveal"><i class="fas fa-certificate"></i> Certifications</h3>
+            <div class="cert-grid">
+                <a href="nptel-cloud-computing.pdf" target="_blank" class="cert-card cert-card-link reveal" data-tilt>
+                    <div class="cert-preview">
+                        <img src="nptel-cert.jpg" alt="NPTEL Cloud Computing Certificate" class="cert-preview-img">
+                        <div class="cert-preview-overlay">
+                            <i class="fas fa-external-link-alt"></i> View Certificate
+                        </div>
+                    </div>
+                    <div class="cert-icon"><i class="fas fa-cloud"></i></div>
+                    <div class="cert-info">
+                        <h4>NPTEL — Cloud Computing</h4>
+                        <p>Elite certification from IIT Kharagpur. Consolidated score: 67% (Online: 25/25, Proctored:
+                            41.75/75).</p>
+                        <div class="cert-meta">
+                            <span class="cert-date"><i class="fas fa-calendar-alt"></i> Jan–Apr 2025</span>
+                            <span class="cert-tech">IIT Kharagpur</span>
+                            <span class="cert-badge">Elite</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="iarneo-java.pdf" target="_blank" class="cert-card cert-card-link reveal" data-tilt>
+                    <div class="cert-preview">
+                        <img src="iarneo-cert.jpg" alt="Iamneo Java Programming Certificate" class="cert-preview-img">
+                        <div class="cert-preview-overlay">
+                            <i class="fas fa-external-link-alt"></i> View Certificate
+                        </div>
+                    </div>
+                    <div class="cert-icon"><i class="fab fa-java"></i></div>
+                    <div class="cert-info">
+                        <h4>Iamneo — Java Programming</h4>
+                        <p>Java Programming certification from Iamneo platform.</p>
+                        <div class="cert-meta">
+                            <span class="cert-date"><i class="fas fa-calendar-alt"></i> Mar 2025</span>
+                            <span class="cert-tech">Iamneo</span>
+                            <span class="cert-badge" style="background: linear-gradient(135deg, #ff6b6b, #ee5a24); color: #fff;">Certified</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://www.freecodecamp.org/certification/hema123/responsive-web-design" target="_blank" class="cert-card cert-card-link reveal" data-tilt>
+                    <div class="cert-preview">
+                        <img src="freecodecamp-cert.jpg" alt="freeCodeCamp Responsive Web Design Certificate" class="cert-preview-img">
+                        <div class="cert-preview-overlay">
+                            <i class="fas fa-external-link-alt"></i> View Certificate
+                        </div>
+                    </div>
+                    <div class="cert-icon"><i class="fab fa-free-code-camp"></i></div>
+                    <div class="cert-info">
+                        <h4>freeCodeCamp — Responsive Web Design</h4>
+                        <div class="cert-meta">
+                            <span class="cert-date"><i class="fas fa-calendar-alt"></i> Jan 2024</span>
+                            <span class="cert-tech">freeCodeCamp</span>
+                            <span class="cert-badge" style="background: linear-gradient(135deg, #0a0a23, #3b3b4f); color: #fff;">Certified</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Achievements -->
+            <h3 class="cert-category-title reveal"><i class="fas fa-trophy"></i> Achievements</h3>
+            <div class="cert-grid">
+                <a href="younid-admission.pdf" target="_blank" class="cert-card achievement cert-card-link reveal"
+                    data-tilt>
+                    <div class="cert-preview">
+                        <img src="younid-cert.jpg" alt="IIT Madras Admission Letter" class="cert-preview-img">
+                        <div class="cert-preview-overlay">
+                            <i class="fas fa-external-link-alt"></i> View Certificate
+                        </div>
+                    </div>
+                    <div class="cert-icon achievement"><i class="fas fa-award"></i></div>
+                    <div class="cert-info">
+                        <h4>Qualified for BS in Data Science & Application — IIT Madras</h4>
+                        <p>Selected for the prestigious BS degree programme at IIT Madras through the YouNiD entrance.
+                        </p>
+                        <div class="cert-meta">
+                            <span class="cert-date"><i class="fas fa-calendar-alt"></i> Apr 2024</span>
+                            <span class="cert-tech">IIT Madras</span>
+                            <span class="cert-badge"
+                                style="background: linear-gradient(135deg, #00c9ff, #92fe9d); color: #1a1a2e;">YouNiD</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== CONTACT SECTION ======================== -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title reveal">
+                Get In Touch
+            </h2>
+            <p class="section-subtitle reveal">Have a question or want to work together?</p>
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <h3>Let's Talk</h3>
+                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of
+                        something amazing.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>hemantdigarse883@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91-9165186591</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Madhya Pradesh, India</span>
+                        </div>
+                    </div>
+                    <div class="contact-socials">
+                        <a href="https://github.com/HemantDigarse/" target="_blank" class="social-link"
+                            aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/hemant" target="_blank" class="social-link"
+                            aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:hemantdigarse883@gmail.com" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <form id="contact-form" class="contact-form reveal">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder=" " required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder=" " required>
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== FOOTER ======================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#home" class="footer-logo">Hemant Digarse</a>
+                <p class="footer-text">Designed & Built by <strong>Hemant Digarse</strong></p>
+                <div class="footer-socials">
+                    <a href="https://github.com/HemantDigarse/" target="_blank" aria-label="GitHub"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/hemant" target="_blank" aria-label="LinkedIn"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:hemantdigarse883@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+                <p class="footer-copyright">&copy; 2026 Hemant Digarse. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ======================== BACK TO TOP ======================== -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
